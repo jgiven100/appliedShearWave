@@ -81,10 +81,10 @@ class ForceVector(Vector):
         self.name = 'Force Vector'
         """
         WARNING:
-        The `factor = 1.0` will differ based on using the "upward propogating 
+        The `factor = 2.0` will differ based on using the "upward propogating 
         wave" motion or the "outcropng wave" motion
         """
-        factor = 1.0
+        factor = 2.0
 
         self.c = factor * vs_rock * rho_rock * a_elem
         self.vector[-1, 0] += self.c

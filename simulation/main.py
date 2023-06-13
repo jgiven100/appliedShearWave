@@ -11,10 +11,10 @@ def main():
         'rho_rock': Mass density of underlying rock [km/m3]
     """
     params = {
-        'vs': 350,
-        'rho': 2000,
-        'vs_rock': 1500,
-        'rho_rock': 2400,
+        'vs': 100,
+        'rho': 1000,
+        'vs_rock': 100,
+        'rho_rock': 1000,
     }
     """
     sim is a dictionary of simulation settings
@@ -31,9 +31,9 @@ def main():
     sim = {
         'name': 'compliant/',
         'rigid': False,
-        'A': 0.5,
-        'B': 5 * np.pi,
-        'h': 25.0,
+        'A': 1.0,
+        'B': 4 * np.pi,
+        'h': 50.0,
     }
 
     # Solve
